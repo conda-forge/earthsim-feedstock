@@ -1,17 +1,17 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: earthsim
-  version: {{ version }}
+  version: v{{ version }}
 
 source:
-  url: https://github.com/pyviz/EarthSim/archive/{{ version }}.tar.gz
-  sha256: 93594afbdd8569e2edd7873d603d341bc126c2cf05ca371f6250d49ba0e20df3
+  url: https://github.com/pyviz/EarthSim/archive/v{{ version }}.tar.gz
+  sha256: ac40292ebdfa6c620ac60b2fd0af771d1587e21cb15ea5ed8c07d5cf1edd35d6
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
