@@ -3,7 +3,7 @@ About earthsim
 
 Home: https://github.com/pyviz/EarthSim
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
